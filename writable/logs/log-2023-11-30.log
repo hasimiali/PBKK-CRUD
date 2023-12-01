@@ -1,0 +1,48 @@
+CRITICAL - 2023-11-30 07:05:28 --> Trying to access array offset on value of type null
+in APPPATH\Views\sample-edit.php on line 40.
+ 1 APPPATH\Views\sample-edit.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'D:\\app\\xampp\\htdocs\\TUGAS-PBKK-CRUD\\app\\Views\\sample-edit.php', 40)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\app\\xampp\\htdocs\\TUGAS-PBKK-CRUD\\app\\Views\\sample-edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('sample-edit', [], true)
+ 5 APPPATH\Controllers\Sample.php(80): view('sample-edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Sample->edit('your-background-image-url')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sample))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\app\\xampp\\htdocs\\TUGAS-PBKK-CRUD\\public\\index.php')
+CRITICAL - 2023-11-30 07:08:52 --> Trying to access array offset on value of type null
+in APPPATH\Views\sample-edit.php on line 40.
+ 1 APPPATH\Views\sample-edit.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'D:\\app\\xampp\\htdocs\\TUGAS-PBKK-CRUD\\app\\Views\\sample-edit.php', 40)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\app\\xampp\\htdocs\\TUGAS-PBKK-CRUD\\app\\Views\\sample-edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('sample-edit', [], true)
+ 5 APPPATH\Controllers\Sample.php(80): view('sample-edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Sample->edit('your-background-image-url')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sample))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\app\\xampp\\htdocs\\TUGAS-PBKK-CRUD\\public\\index.php')
+CRITICAL - 2023-11-30 07:10:10 --> Trying to access array offset on value of type null
+in APPPATH\Views\sample-edit.php on line 40.
+ 1 APPPATH\Views\sample-edit.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'D:\\app\\xampp\\htdocs\\TUGAS-PBKK-CRUD\\app\\Views\\sample-edit.php', 40)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\app\\xampp\\htdocs\\TUGAS-PBKK-CRUD\\app\\Views\\sample-edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('sample-edit', [], true)
+ 5 APPPATH\Controllers\Sample.php(80): view('sample-edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Sample->edit('your-background-image-url')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sample))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\app\\xampp\\htdocs\\TUGAS-PBKK-CRUD\\public\\index.php')
+CRITICAL - 2023-11-30 07:10:37 --> Trying to access array offset on value of type null
+in APPPATH\Views\sample-edit.php on line 40.
+ 1 APPPATH\Views\sample-edit.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'D:\\app\\xampp\\htdocs\\TUGAS-PBKK-CRUD\\app\\Views\\sample-edit.php', 40)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\app\\xampp\\htdocs\\TUGAS-PBKK-CRUD\\app\\Views\\sample-edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('sample-edit', [], true)
+ 5 APPPATH\Controllers\Sample.php(80): view('sample-edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Sample->edit('your-background-image-url')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sample))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\app\\xampp\\htdocs\\TUGAS-PBKK-CRUD\\public\\index.php')

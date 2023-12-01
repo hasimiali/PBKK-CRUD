@@ -1,0 +1,204 @@
+ERROR - 2023-12-01 06:36:22 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in D:\app\xampp\htdocs\TUGAS-PBKK-CRUD\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 D:\app\xampp\htdocs\TUGAS-PBKK-CRUD\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('127.0.0.1', 'root', Object(SensitiveParameterValue), 'p-12', 3306, '', 0)
+#1 D:\app\xampp\htdocs\TUGAS-PBKK-CRUD\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\app\xampp\htdocs\TUGAS-PBKK-CRUD\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\app\xampp\htdocs\TUGAS-PBKK-CRUD\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1699): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 D:\app\xampp\htdocs\TUGAS-PBKK-CRUD\vendor\codeigniter4\framework\system\Model.php(599): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 D:\app\xampp\htdocs\TUGAS-PBKK-CRUD\vendor\codeigniter4\framework\system\BaseModel.php(1203): CodeIgniter\Model->countAllResults(false)
+#6 D:\app\xampp\htdocs\TUGAS-PBKK-CRUD\app\Controllers\CRUD.php(18): CodeIgniter\BaseModel->paginate(10, 'crud')
+#7 D:\app\xampp\htdocs\TUGAS-PBKK-CRUD\vendor\codeigniter4\framework\system\CodeIgniter.php(942): App\Controllers\CRUD->index()
+#8 D:\app\xampp\htdocs\TUGAS-PBKK-CRUD\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CRUD))
+#9 D:\app\xampp\htdocs\TUGAS-PBKK-CRUD\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\app\xampp\htdocs\TUGAS-PBKK-CRUD\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 D:\app\xampp\htdocs\TUGAS-PBKK-CRUD\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\app\\xampp\\ht...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in D:\app\xampp\htdocs\TUGAS-PBKK-CRUD\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 D:\app\xampp\htdocs\TUGAS-PBKK-CRUD\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\app\xampp\htdocs\TUGAS-PBKK-CRUD\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\app\xampp\htdocs\TUGAS-PBKK-CRUD\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1699): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#3 D:\app\xampp\htdocs\TUGAS-PBKK-CRUD\vendor\codeigniter4\framework\system\Model.php(599): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#4 D:\app\xampp\htdocs\TUGAS-PBKK-CRUD\vendor\codeigniter4\framework\system\BaseModel.php(1203): CodeIgniter\Model->countAllResults(false)
+#5 D:\app\xampp\htdocs\TUGAS-PBKK-CRUD\app\Controllers\CRUD.php(18): CodeIgniter\BaseModel->paginate(10, 'crud')
+#6 D:\app\xampp\htdocs\TUGAS-PBKK-CRUD\vendor\codeigniter4\framework\system\CodeIgniter.php(942): App\Controllers\CRUD->index()
+#7 D:\app\xampp\htdocs\TUGAS-PBKK-CRUD\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CRUD))
+#8 D:\app\xampp\htdocs\TUGAS-PBKK-CRUD\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\app\xampp\htdocs\TUGAS-PBKK-CRUD\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 D:\app\xampp\htdocs\TUGAS-PBKK-CRUD\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\app\\xampp\\ht...')
+#11 {main}
+CRITICAL - 2023-12-01 06:36:22 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1699): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `crud`', [], false)
+ 3 SYSTEMPATH\Model.php(599): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 4 SYSTEMPATH\BaseModel.php(1203): CodeIgniter\Model->countAllResults(false)
+ 5 APPPATH\Controllers\CRUD.php(18): CodeIgniter\BaseModel->paginate(10, 'crud')
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\CRUD->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CRUD))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\app\\xampp\\htdocs\\TUGAS-PBKK-CRUD\\public\\index.php')
+ERROR - 2023-12-01 06:37:11 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in D:\app\xampp\htdocs\TUGAS-PBKK-CRUD\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 D:\app\xampp\htdocs\TUGAS-PBKK-CRUD\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('127.0.0.1', 'root', Object(SensitiveParameterValue), 'p-12', 3306, '', 0)
+#1 D:\app\xampp\htdocs\TUGAS-PBKK-CRUD\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\app\xampp\htdocs\TUGAS-PBKK-CRUD\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\app\xampp\htdocs\TUGAS-PBKK-CRUD\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1699): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 D:\app\xampp\htdocs\TUGAS-PBKK-CRUD\vendor\codeigniter4\framework\system\Model.php(599): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 D:\app\xampp\htdocs\TUGAS-PBKK-CRUD\vendor\codeigniter4\framework\system\BaseModel.php(1203): CodeIgniter\Model->countAllResults(false)
+#6 D:\app\xampp\htdocs\TUGAS-PBKK-CRUD\app\Controllers\CRUD.php(18): CodeIgniter\BaseModel->paginate(10, 'crud')
+#7 D:\app\xampp\htdocs\TUGAS-PBKK-CRUD\vendor\codeigniter4\framework\system\CodeIgniter.php(942): App\Controllers\CRUD->index()
+#8 D:\app\xampp\htdocs\TUGAS-PBKK-CRUD\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CRUD))
+#9 D:\app\xampp\htdocs\TUGAS-PBKK-CRUD\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\app\xampp\htdocs\TUGAS-PBKK-CRUD\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 D:\app\xampp\htdocs\TUGAS-PBKK-CRUD\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\app\\xampp\\ht...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in D:\app\xampp\htdocs\TUGAS-PBKK-CRUD\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 D:\app\xampp\htdocs\TUGAS-PBKK-CRUD\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\app\xampp\htdocs\TUGAS-PBKK-CRUD\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\app\xampp\htdocs\TUGAS-PBKK-CRUD\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1699): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#3 D:\app\xampp\htdocs\TUGAS-PBKK-CRUD\vendor\codeigniter4\framework\system\Model.php(599): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#4 D:\app\xampp\htdocs\TUGAS-PBKK-CRUD\vendor\codeigniter4\framework\system\BaseModel.php(1203): CodeIgniter\Model->countAllResults(false)
+#5 D:\app\xampp\htdocs\TUGAS-PBKK-CRUD\app\Controllers\CRUD.php(18): CodeIgniter\BaseModel->paginate(10, 'crud')
+#6 D:\app\xampp\htdocs\TUGAS-PBKK-CRUD\vendor\codeigniter4\framework\system\CodeIgniter.php(942): App\Controllers\CRUD->index()
+#7 D:\app\xampp\htdocs\TUGAS-PBKK-CRUD\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CRUD))
+#8 D:\app\xampp\htdocs\TUGAS-PBKK-CRUD\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\app\xampp\htdocs\TUGAS-PBKK-CRUD\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 D:\app\xampp\htdocs\TUGAS-PBKK-CRUD\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\app\\xampp\\ht...')
+#11 {main}
+CRITICAL - 2023-12-01 06:37:11 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1699): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `crud`', [], false)
+ 3 SYSTEMPATH\Model.php(599): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 4 SYSTEMPATH\BaseModel.php(1203): CodeIgniter\Model->countAllResults(false)
+ 5 APPPATH\Controllers\CRUD.php(18): CodeIgniter\BaseModel->paginate(10, 'crud')
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\CRUD->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CRUD))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\app\\xampp\\htdocs\\TUGAS-PBKK-CRUD\\public\\index.php')
+ERROR - 2023-12-01 06:38:13 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in D:\app\xampp\htdocs\TUGAS-PBKK-CRUD\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 D:\app\xampp\htdocs\TUGAS-PBKK-CRUD\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('127.0.0.1', 'root', Object(SensitiveParameterValue), 'p-12', 3306, '', 0)
+#1 D:\app\xampp\htdocs\TUGAS-PBKK-CRUD\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\app\xampp\htdocs\TUGAS-PBKK-CRUD\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\app\xampp\htdocs\TUGAS-PBKK-CRUD\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1699): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 D:\app\xampp\htdocs\TUGAS-PBKK-CRUD\vendor\codeigniter4\framework\system\Model.php(599): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 D:\app\xampp\htdocs\TUGAS-PBKK-CRUD\vendor\codeigniter4\framework\system\BaseModel.php(1203): CodeIgniter\Model->countAllResults(false)
+#6 D:\app\xampp\htdocs\TUGAS-PBKK-CRUD\app\Controllers\CrudController.php(18): CodeIgniter\BaseModel->paginate(10, 'crud')
+#7 D:\app\xampp\htdocs\TUGAS-PBKK-CRUD\vendor\codeigniter4\framework\system\CodeIgniter.php(942): App\Controllers\CrudController->index()
+#8 D:\app\xampp\htdocs\TUGAS-PBKK-CRUD\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrudController))
+#9 D:\app\xampp\htdocs\TUGAS-PBKK-CRUD\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\app\xampp\htdocs\TUGAS-PBKK-CRUD\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 D:\app\xampp\htdocs\TUGAS-PBKK-CRUD\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\app\\xampp\\ht...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in D:\app\xampp\htdocs\TUGAS-PBKK-CRUD\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 D:\app\xampp\htdocs\TUGAS-PBKK-CRUD\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\app\xampp\htdocs\TUGAS-PBKK-CRUD\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\app\xampp\htdocs\TUGAS-PBKK-CRUD\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1699): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#3 D:\app\xampp\htdocs\TUGAS-PBKK-CRUD\vendor\codeigniter4\framework\system\Model.php(599): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#4 D:\app\xampp\htdocs\TUGAS-PBKK-CRUD\vendor\codeigniter4\framework\system\BaseModel.php(1203): CodeIgniter\Model->countAllResults(false)
+#5 D:\app\xampp\htdocs\TUGAS-PBKK-CRUD\app\Controllers\CrudController.php(18): CodeIgniter\BaseModel->paginate(10, 'crud')
+#6 D:\app\xampp\htdocs\TUGAS-PBKK-CRUD\vendor\codeigniter4\framework\system\CodeIgniter.php(942): App\Controllers\CrudController->index()
+#7 D:\app\xampp\htdocs\TUGAS-PBKK-CRUD\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrudController))
+#8 D:\app\xampp\htdocs\TUGAS-PBKK-CRUD\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\app\xampp\htdocs\TUGAS-PBKK-CRUD\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 D:\app\xampp\htdocs\TUGAS-PBKK-CRUD\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\app\\xampp\\ht...')
+#11 {main}
+CRITICAL - 2023-12-01 06:38:13 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1699): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `crud`', [], false)
+ 3 SYSTEMPATH\Model.php(599): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 4 SYSTEMPATH\BaseModel.php(1203): CodeIgniter\Model->countAllResults(false)
+ 5 APPPATH\Controllers\CrudController.php(18): CodeIgniter\BaseModel->paginate(10, 'crud')
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\CrudController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrudController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\app\\xampp\\htdocs\\TUGAS-PBKK-CRUD\\public\\index.php')
+ERROR - 2023-12-01 06:38:39 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in D:\app\xampp\htdocs\TUGAS-PBKK-CRUD\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 D:\app\xampp\htdocs\TUGAS-PBKK-CRUD\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('127.0.0.1', 'root', Object(SensitiveParameterValue), 'p-12', 3306, '', 0)
+#1 D:\app\xampp\htdocs\TUGAS-PBKK-CRUD\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\app\xampp\htdocs\TUGAS-PBKK-CRUD\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\app\xampp\htdocs\TUGAS-PBKK-CRUD\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1699): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 D:\app\xampp\htdocs\TUGAS-PBKK-CRUD\vendor\codeigniter4\framework\system\Model.php(599): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 D:\app\xampp\htdocs\TUGAS-PBKK-CRUD\vendor\codeigniter4\framework\system\BaseModel.php(1203): CodeIgniter\Model->countAllResults(false)
+#6 D:\app\xampp\htdocs\TUGAS-PBKK-CRUD\app\Controllers\CrudController.php(18): CodeIgniter\BaseModel->paginate(10, 'crud')
+#7 D:\app\xampp\htdocs\TUGAS-PBKK-CRUD\vendor\codeigniter4\framework\system\CodeIgniter.php(942): App\Controllers\CrudController->index()
+#8 D:\app\xampp\htdocs\TUGAS-PBKK-CRUD\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrudController))
+#9 D:\app\xampp\htdocs\TUGAS-PBKK-CRUD\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\app\xampp\htdocs\TUGAS-PBKK-CRUD\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 D:\app\xampp\htdocs\TUGAS-PBKK-CRUD\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\app\\xampp\\ht...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in D:\app\xampp\htdocs\TUGAS-PBKK-CRUD\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 D:\app\xampp\htdocs\TUGAS-PBKK-CRUD\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\app\xampp\htdocs\TUGAS-PBKK-CRUD\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\app\xampp\htdocs\TUGAS-PBKK-CRUD\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1699): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#3 D:\app\xampp\htdocs\TUGAS-PBKK-CRUD\vendor\codeigniter4\framework\system\Model.php(599): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#4 D:\app\xampp\htdocs\TUGAS-PBKK-CRUD\vendor\codeigniter4\framework\system\BaseModel.php(1203): CodeIgniter\Model->countAllResults(false)
+#5 D:\app\xampp\htdocs\TUGAS-PBKK-CRUD\app\Controllers\CrudController.php(18): CodeIgniter\BaseModel->paginate(10, 'crud')
+#6 D:\app\xampp\htdocs\TUGAS-PBKK-CRUD\vendor\codeigniter4\framework\system\CodeIgniter.php(942): App\Controllers\CrudController->index()
+#7 D:\app\xampp\htdocs\TUGAS-PBKK-CRUD\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrudController))
+#8 D:\app\xampp\htdocs\TUGAS-PBKK-CRUD\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\app\xampp\htdocs\TUGAS-PBKK-CRUD\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 D:\app\xampp\htdocs\TUGAS-PBKK-CRUD\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\app\\xampp\\ht...')
+#11 {main}
+CRITICAL - 2023-12-01 06:38:39 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1699): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `crud`', [], false)
+ 3 SYSTEMPATH\Model.php(599): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 4 SYSTEMPATH\BaseModel.php(1203): CodeIgniter\Model->countAllResults(false)
+ 5 APPPATH\Controllers\CrudController.php(18): CodeIgniter\BaseModel->paginate(10, 'crud')
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\CrudController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrudController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\app\\xampp\\htdocs\\TUGAS-PBKK-CRUD\\public\\index.php')
+ERROR - 2023-12-01 11:19:22 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in B:\SEM5\PBKK\CI_CRUD\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 B:\SEM5\PBKK\CI_CRUD\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('127.0.0.1', 'root', '', 'p-12', 3306, '', 0)
+#1 B:\SEM5\PBKK\CI_CRUD\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 B:\SEM5\PBKK\CI_CRUD\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 B:\SEM5\PBKK\CI_CRUD\vendor\codeigniter4\framework\system\Database\BaseConnection.php(1410): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 B:\SEM5\PBKK\CI_CRUD\vendor\codeigniter4\framework\system\Database\BaseConnection.php(1429): CodeIgniter\Database\BaseConnection->listTables()
+#5 B:\SEM5\PBKK\CI_CRUD\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(764): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#6 B:\SEM5\PBKK\CI_CRUD\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(168): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 B:\SEM5\PBKK\CI_CRUD\vendor\codeigniter4\framework\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 B:\SEM5\PBKK\CI_CRUD\vendor\codeigniter4\framework\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 B:\SEM5\PBKK\CI_CRUD\vendor\codeigniter4\framework\system\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 B:\SEM5\PBKK\CI_CRUD\spark(102): CodeIgniter\CLI\Console->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in B:\SEM5\PBKK\CI_CRUD\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 B:\SEM5\PBKK\CI_CRUD\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 B:\SEM5\PBKK\CI_CRUD\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 B:\SEM5\PBKK\CI_CRUD\vendor\codeigniter4\framework\system\Database\BaseConnection.php(1410): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#3 B:\SEM5\PBKK\CI_CRUD\vendor\codeigniter4\framework\system\Database\BaseConnection.php(1429): CodeIgniter\Database\BaseConnection->listTables()
+#4 B:\SEM5\PBKK\CI_CRUD\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(764): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#5 B:\SEM5\PBKK\CI_CRUD\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(168): CodeIgniter\Database\MigrationRunner->ensureTable()
+#6 B:\SEM5\PBKK\CI_CRUD\vendor\codeigniter4\framework\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#7 B:\SEM5\PBKK\CI_CRUD\vendor\codeigniter4\framework\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#8 B:\SEM5\PBKK\CI_CRUD\vendor\codeigniter4\framework\system\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('migrate', Array)
+#9 B:\SEM5\PBKK\CI_CRUD\spark(102): CodeIgniter\CLI\Console->run()
+#10 {main}
